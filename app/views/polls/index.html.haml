@@ -6,5 +6,6 @@
       = link_to poll.title, poll
       = link_to 'Edit', edit_poll_path(poll)
       = link_to 'Destroy', poll, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      = link_to "Add question", new_poll_question_path(poll)
 
 %p= link_to 'New Poll', new_poll_path, class: "btn"
